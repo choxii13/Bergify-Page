@@ -18,7 +18,7 @@ export const sectionThreeData = [
       "Say goodbye to add-ons. Rows integrates with all your business tools. Use templates with pre-built workflows.",
   },
   {
-    imageLink: "../svg-icon/helpdesk.svg",
+    imageLink: "./svg-icon/helpdesk.svg",
     title: "Helpdesk Software",
     paragraph:
       "Resolve customer issues faster and delight your customers by delivering exceptional customer support",
