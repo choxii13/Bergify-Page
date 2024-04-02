@@ -1,0 +1,61 @@
+section .description-center .description-title {
+  text-align: center;
+  margin-bottom: var(--space-bigger);
+}
+
+section .description-center .description-title h2 {
+  font-size: var(--secondary-header-font-size);
+  color: var(--secondary-color-text-header);
+}
+
+section .description-center > ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+section .description-center .creators {
+  row-gap: 2.5rem;
+}
+
+section .description-center .creators img {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+}
+
+section:nth-child(3) .description-center article,
+section:nth-child(6) .description-center li {
+  text-align: center;
+}
+
+section .description-center li p {
+  font-size: var(--paragraph-small);
+  line-height: 1.6rem;
+}
+
+section .description-center h4 {
+  font-size: var(--small-header-font-size);
+  color: var(--secondary-color-text-header);
+}
+
+section .description-center h5 {
+  font-size: var(--small-small-header-font-size);
+  color: var(--secondary-color-text-header);
+}
+
+section:nth-child(3) > div li article * {
+  margin-bottom: var(--space-big);
+}
+
+#violet {
+  color: var(--secondary-color-button);
+}
+
+@media (min-width: 60rem) {
+  section .description-center ul {
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+  }
+  section .description-center .creators {
+    grid-template-columns: repeat(auto-fill, minmax(17.8rem, 1fr));
+  }
+}

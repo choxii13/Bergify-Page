@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color-bg: white;
+
+  --secondary-color-button: #7e3af2;
+  --secondary-color-button-light: #935fed;
+
+  --secondary-color-text-header: #1f2a37;
+  --secondary-color-text-paragraph: #4b5663;
+
+  --space-small: 0.25rem;
+  --space-medium: 0.5rem;
+  --space-semi-medium: 0.8rem;
+  --space-big: 1rem;
+  --space-semi-big: 1.5rem;
+  --space-bigger: 2rem;
+
+  --radius-small: 0.6rem;
+  --radius-medium: 2rem;
+  --radius-big: 4rem;
+
+  --section-spacing: 6rem;
+
+  --main-header-font-size: 3.3rem;
+  --secondary-header-font-size: 3rem;
+  --semi-header-font-size: 2.3rem;
+  --small-header-font-size: 1.3rem;
+  --small-small-header-font-size: 0.9rem;
+
+  --paragraph-small: 0.9rem;
+  --paragpagh-medium: 1.1rem;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  color: var(--secondary-color-text-paragraph);
+  font-size: var(--paragpagh-medium);
+  line-height: 2rem;
+}
+
+body {
+  width: 100%;
+}
+
+header > div,
+section > div {
+  width: 95%;
+  max-width: 90rem;
+  margin: auto;
+}
+
+section {
+  margin-bottom: var(--section-spacing);
+}
+
+button,
+a,
+input {
+  all: unset;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.btn {
+  background-color: var(--secondary-color-button);
+  padding: var(--space-semi-medium) var(--space-semi-big);
+  color: white;
+  border-radius: var(--radius-small);
+}
+
+.btn.alt {
+  background-color: white;
+  color: var(--secondary-color-text-header);
+  box-shadow: 0px 0px 0.7px black;
+}
+
+.btn.alt.no-design {
+  box-shadow: none;
+}
+
+.btn.alt.no-design:hover,
+.btn.alt:hover {
+  background-color: transparent;
+}
+.btn:hover,
+.btn.started:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color-button-light);
+}
+
+/* tool tip */
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  padding: var(--space-big);
+  box-shadow: 0 0 1px black;
+  background-color: white;
+  width: 12rem;
+  color: black;
+  z-index: 1;
+}
+
+.tooltip ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* mobile button burger */
+.mobile-menu-btn {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mobile-menu-btn span {
+  width: 2.1rem;
+  height: 0.2rem;
+  background-color: black;
+}
+
+/* bergify logo */
+
+.logo {
+  display: flex;
+  gap: 2px;
+  height: 100%;
+}
+.logo div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.logo > div span {
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 2px;
+  background-color: var(--secondary-color-text-header);
+}
+
+.logo > div span:nth-child(2) {
+  background-color: var(--secondary-color-button);
+}
+.logo > span {
+  background-color: var(--secondary-color-text-header);
+  width: 0.3rem;
+  border-radius: 2px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}

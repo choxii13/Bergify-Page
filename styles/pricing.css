@@ -1,0 +1,59 @@
+h2 {
+  font-size: var(--secondary-header-font-size);
+  color: var(--secondary-color-text-header);
+}
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.pricing > li p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: var(--secondary-color-text-header);
+}
+
+.pricing .pricing-details {
+  padding: 1.5rem 1.3rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 37rem;
+  width: 100%;
+}
+
+.pricing .pricing-details > div,
+.pricing .pricing-details > p {
+  text-align: center;
+}
+
+.pricing .pricing-details > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pricing > li > ul > li {
+  font-size: 0.8rem;
+  color: var(--secondary-color-text-paragraph);
+  font-weight: 600;
+}
+
+.pricing > li > ul > li::before {
+  content: "\2713";
+  font-size: 16px;
+  color: rgb(0, 254, 169);
+  font-weight: 900;
+  padding-right: 5px;
+}
+
+.pricing span {
+  font-size: 1rem;
+  color: var(--secondary-color-text-header);
+  font-weight: 200;
+}
+.pricing button {
+  text-align: center;
+}

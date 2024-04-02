@@ -1,0 +1,43 @@
+section:nth-child(1) h1 {
+  font-size: var(--main-header-font-size);
+  color: var(--secondary-color-text-header);
+  line-height: 4rem;
+  margin-bottom: var(--space-big);
+}
+
+section:nth-child(1) p {
+  margin-bottom: var(--space-semi-big);
+}
+
+.button-actions {
+  display: flex;
+  gap: var(--space-big);
+  font-size: 1.2rem;
+}
+
+.btn.started {
+  background-color: var(--secondary-color-text-header);
+}
+
+.btn.how-it-works {
+  background-color: white;
+  color: var(--secondary-color-text-paragraph);
+  border: 2px solid var(--secondary-color-text-paragraph);
+}
+.btn.how-it-works i {
+  font-size: 0.9rem;
+}
+
+.btn.how-it-works:hover {
+  color: var(--secondary-color-text-header);
+  border: 2px solid var(--secondary-color-text-header);
+}
+
+@media (min-width: 60rem) {
+  section:nth-child(1) > div {
+    flex-direction: row;
+  }
+  section:nth-child(1) .container > div {
+    width: 50%;
+  }
+}

@@ -1,0 +1,21 @@
+section:nth-child(2) > div {
+  max-width: 60rem;
+  height: 8rem;
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+section:nth-child(2) > div > div {
+  text-align: center;
+  width: 100%;
+  padding-top: 2.6rem;
+  margin: 0;
+  line-height: 2.23rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 1px;
+  height: 100%;
+}
+
+section:nth-child(2) > div h2 {
+  font-size: var(--secondary-header-font-size);
+  color: var(--secondary-color-text-header);
+}
