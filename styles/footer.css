@@ -1,0 +1,82 @@
+footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0;
+  color: white;
+  gap: 1rem;
+}
+
+footer > div p,
+footer address,
+footer i {
+  font-size: clamp(0.4rem, 1.1vw, 1rem);
+  color: white;
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+
+footer > div h5 {
+  font-size: clamp(0.4rem, 1.3vw, 2rem);
+}
+.footer-logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0;
+}
+.footer-logo .logo > span {
+  background-color: white;
+}
+.footer-logo .logo > div span {
+  background-color: white;
+}
+
+footer i {
+  margin-right: 1rem;
+}
+
+footer > div > div {
+  max-width: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer > div > div:nth-child(1) {
+  max-width: 20rem;
+}
+
+#first-para,
+#address {
+  font-weight: 400;
+}
+
+footer > div:nth-child(3) {
+  align-items: center;
+  justify-content: center;
+}
+
+footer hr {
+  border: 1px solid var(--secondary-color-text-paragraph);
+}
+
+@media (min-width: 60rem) {
+  footer > div {
+    flex-direction: row;
+  }
+}
+@media (min-width: 100rem) {
+  footer > div {
+    flex-direction: row;
+  }
+  footer > div h5 {
+    font-size: 1.5rem;
+  }
+
+  footer > div p,
+  footer address,
+  footer i {
+    font-size: 1rem;
+  }
+}

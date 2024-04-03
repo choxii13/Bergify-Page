@@ -2,8 +2,9 @@ import { faqData } from "../data/FAQ-data.js";
 const faqElement = document.querySelector("#FAQ");
 
 export let faqHTML = "";
-// data faqData
+
 // slow?
+// data faqData
 faqData.map((data) => {
   let contentHTML = "";
 

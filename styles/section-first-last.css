@@ -33,6 +33,18 @@ section:nth-child(1) p {
   border: 2px solid var(--secondary-color-text-header);
 }
 
+section:last-of-type > div {
+  background-color: var(--secondary-color-text-header);
+  border-radius: 1rem;
+  padding: 3rem;
+}
+section:last-of-type * {
+  color: white;
+}
+section:last-of-type .container .text-container h3 {
+  font-size: var(--semi-header-font-size);
+  color: white;
+}
 @media (min-width: 60rem) {
   section:nth-child(1) > div {
     flex-direction: row;
