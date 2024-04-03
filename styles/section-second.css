@@ -9,13 +9,12 @@ section:nth-child(2) > div > div {
   text-align: center;
   width: 100%;
   padding-top: 2.6rem;
-  margin: 0;
   line-height: 2.23rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 1px;
   height: 100%;
 }
 
 section:nth-child(2) > div h2 {
-  font-size: var(--secondary-header-font-size);
+  font-size: clamp(3rem, 2vw, var(--secondary-header-font-size));
   color: var(--secondary-color-text-header);
 }

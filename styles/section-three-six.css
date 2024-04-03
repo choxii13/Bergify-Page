@@ -10,17 +10,22 @@ section .description-center .description-title h2 {
 
 section .description-center > ul {
   display: grid;
-  grid-template-columns: 1fr;
+
   gap: 20px;
 }
+
 section .description-center .creators {
   row-gap: 2.5rem;
 }
 
+section .description-center .creators li {
+  width: 100%;
+}
 section .description-center .creators img {
   border-radius: 50%;
   width: 8rem;
   height: 8rem;
+  object-fit: cover;
 }
 
 section:nth-child(3) .description-center article,
@@ -52,10 +57,10 @@ section:nth-child(3) > div li article * {
 }
 
 @media (min-width: 60rem) {
-  section .description-center ul {
+  section:nth-child(3) .description-center ul {
     grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
   }
   section .description-center .creators {
-    grid-template-columns: repeat(auto-fill, minmax(17.8rem, 1fr));
+    grid-template-columns: repeat(4, 1fr);
   }
 }

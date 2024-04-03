@@ -77,6 +77,7 @@ li {
   padding: var(--space-semi-medium) var(--space-semi-big);
   color: white;
   border-radius: var(--radius-small);
+  font-size: clamp(1rem, 1vw, 1.2rem);
 }
 
 .btn.alt {
@@ -162,4 +163,10 @@ li {
 
 .logo:hover {
   cursor: pointer;
+}
+
+@media (min-width: 100rem) {
+  .btn {
+    font-size: 0.8rem;
+  }
 }
