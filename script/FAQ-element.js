@@ -2,6 +2,8 @@ import { faqData } from "../data/FAQ-data.js";
 const faqElement = document.querySelector("#FAQ");
 
 export let faqHTML = "";
+// data faqData
+// slow?
 faqData.map((data) => {
   let contentHTML = "";
 
@@ -11,18 +13,18 @@ faqData.map((data) => {
 
     //  data within data within data
     content.paragraph.map((paraData) => {
-      //  all  data within data within data
+      //  html data within data within data
       para += `<p>${paraData}</p>`;
     });
 
-    // all data within data
+    // html data within data
     contentHTML += `<li>
           <h4> ${content.title}</h4>
            ${para}
           </li>`;
   });
 
-  // all data
+  // html data
   faqHTML += `<li>
     <ul> 
     ${contentHTML}

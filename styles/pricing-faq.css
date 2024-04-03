@@ -66,7 +66,9 @@ h2 {
   color: var(--secondary-color-button);
   text-decoration: underline;
 }
-
+#FAQ li a:hover {
+  cursor: pointer;
+}
 @media (min-width: 60rem) {
   .pricing {
     grid-template-columns: repeat(3, 1fr);
