@@ -2,7 +2,6 @@ export const pricingData = [
   {
     title: "Freelancer",
     price: "$99",
-    month: "/month",
     paragraph:
       "Great for personal use and for your commercial and personal projects",
     item: [
@@ -19,7 +18,6 @@ export const pricingData = [
   {
     title: "Company",
     price: "$299",
-    month: "/month",
     paragraph: "Best for large scale uses and extended redistribution rights",
     item: [
       "Everything you need to manage payments",
@@ -36,7 +34,6 @@ export const pricingData = [
   {
     title: "Enterprise",
     price: "$999",
-    month: "/month",
     paragraph: "Best for large scale uses and extended redistribution rights",
     item: [
       "Everything you need to manage payments",

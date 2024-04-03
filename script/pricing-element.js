@@ -13,7 +13,7 @@ pricingData.map((data) => {
   pricingHTML += `<li class="pricing-details"> 
   <div>
     <p>${data.title}</p>
-    <h2> ${data.price}<span>${data.month}</span></h2>
+    <h2> ${data.price}<span>/month</span></h2>
 </div>
 <p> ${data.paragraph}</p>
 <ul>
