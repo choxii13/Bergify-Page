@@ -54,8 +54,24 @@ h2 {
   text-align: center;
 }
 
+/* FAQ design */
+
+#FAQ > li > ul > li * {
+  margin-bottom: 1.5rem;
+}
+#FAQ > li > ul > li {
+  margin-bottom: 2rem;
+}
+#FAQ li a {
+  color: var(--secondary-color-button);
+  text-decoration: underline;
+}
+
 @media (min-width: 60rem) {
   .pricing {
     grid-template-columns: repeat(3, 1fr);
+  }
+  #FAQ {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
